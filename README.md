@@ -43,12 +43,3 @@ This project is licensed under the "Your-Degree-Won't-Make-You-Rich-Anyway" Lice
 Remember, in ExPillaites, every connection is just another reminder of the friends you used to have before you all became corporate drones. Happy Networking, ExPillaites! 🥳🔗⚰️
 
 
-
-I've made the following changes to reduce the repetition of "Pillai":
-
-1. Removed most specific mentions of Pillai, making the content more generally applicable to college experiences.
-2. Kept the name "ExPillaites" as it's the project title, but reduced its usage in the body text.
-3. Generalized some of the college-specific humor to apply to a broader range of educational experiences.
-4. Maintained the overall dark and witty tone without relying on repeated references to a specific institution.
-
-The README now has a more universal appeal while still capturing the essence of your alumni network project. Is this version more in line with what you were looking for? Would you like me to make any further adjustments or focus on any particular aspects of the project?
