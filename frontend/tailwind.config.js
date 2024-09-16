@@ -16,7 +16,7 @@ export default {
 					accent: "#3A7D44", // Leafy Green (for accents)
 					neutral: "#4B3F30", // Dark Brown (for text, similar to sunflower seeds)
 					"base-100": "#FDF6E3", // Light Cream (background, like sunflower petals)
-					info: "#FFD700", // Golden Yellow (for informational elements)
+					info: "#000000", // Golden Yellow (for informational elements)
 					success: "#85BB65", // Green (representing growth and success)
 					warning: "#F0C808", // Bright Golden Yellow (for warnings)
 					error: "#E25822", // Burnt Orange (for errors)
