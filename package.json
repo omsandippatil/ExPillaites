@@ -4,11 +4,9 @@
   "description": "",
   "main": "backend/server.js",
   "scripts": {
-    "dev": "concurrently \"nodemon backend/server.js\" \"npm run dev --prefix frontend\"",
+    "dev": "nodemon backend/server.js",
     "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "heroku-postbuild": "npm run build",
-    "postinstall": "npm install --prefix frontend"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
@@ -23,8 +21,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mailtrap": "^3.4.0",
-    "mongoose": "^8.6.1",
-    "concurrently": "^8.2.0"
+    "mongoose": "^8.6.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
