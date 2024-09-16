@@ -1,9 +1,11 @@
-{
-  "builds": [
-    { "src": "backend/server.js", "use": "@vercel/node" },
-    { "src": "frontend/package.json", "use": "@vercel/static-build" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "frontend/dist/index.html" }
-  ]
-}
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  root: 'frontend',   // Set the root directory to the frontend
+  build: {
+    outDir: '../public',  // Vercel looks for the public directory at the root level
+  },
+  publicDir: 'frontend/public',  // Point to the correct location of your public folder with images
+});
