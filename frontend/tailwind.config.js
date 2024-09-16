@@ -10,16 +10,16 @@ export default {
 	daisyui: {
 		themes: [
 			{
-				linkedin: {
-					primary: "#0A66C2", // LinkedIn Blue
-					secondary: "#FFFFFF", // White
-					accent: "#7FC15E", // LinkedIn Green (for accents)
-					neutral: "#000000", // Black (for text)
-					"base-100": "#F3F2EF", // Light Gray (background)
-					info: "#5E5E5E", // Dark Gray (for secondary text)
-					success: "#057642", // Dark Green (for success messages)
-					warning: "#F5C75D", // Yellow (for warnings)
-					error: "#CC1016", // Red (for errors)
+				sunflower: {
+					primary: "#FFDA03", // Bright Sunflower Yellow
+					secondary: "#FFF5B7", // Soft Pale Yellow
+					accent: "#3A7D44", // Leafy Green (for accents)
+					neutral: "#4B3F30", // Dark Brown (for text, similar to sunflower seeds)
+					"base-100": "#FDF6E3", // Light Cream (background, like sunflower petals)
+					info: "#FFD700", // Golden Yellow (for informational elements)
+					success: "#85BB65", // Green (representing growth and success)
+					warning: "#F0C808", // Bright Golden Yellow (for warnings)
+					error: "#E25822", // Burnt Orange (for errors)
 				},
 			},
 		],
