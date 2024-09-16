@@ -1,12 +1,17 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
-  root: 'frontend', // Vite root directory
+  root: path.resolve(__dirname, 'frontend'), // Set the root directory to frontend
   plugins: [react()],
   build: {
-    outDir: '../public', // Output directory relative to the root of the project
-    emptyOutDir: true, // Ensure the output directory is emptied before each build
+    outDir: path.resolve(__dirname, 'frontend', 'dist'), // Output to frontend/dist
+    emptyOutDir: true, // Clears the output directory before building
   },
-  publicDir: 'frontend/public', // Public directory for static assets
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'frontend', 'src'), // Adjust the alias for imports if needed
+    },
+  },
 });
