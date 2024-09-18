@@ -4,22 +4,41 @@ import daisyui from "daisyui";
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				// Extend the Tailwind color palette to match the theme
+				background: 'hsl(220, 20%, 5%)', // Dark background
+				foreground: 'hsl(0, 0%, 95%)',   // Light foreground
+				card: 'hsl(220, 20%, 8%)',       // Slightly lighter than background for card elements
+				accent: 'hsl(45, 100%, 50%)',    // Bright accent yellow
+				border: 'hsl(220, 15%, 15%)',    // Darker for borders and outlines
+				muted: 'hsl(220, 15%, 15%)',     // Muted colors
+				ring: 'hsl(45, 100%, 50%)',      // Accent color for ring effects
+			},
+			fontFamily: {
+				sans: ['Poppins', 'sans-serif'], // Apply 'Poppins' font family
+			},
+			borderRadius: {
+				DEFAULT: '0.25rem', // Base radius for consistent design
+			},
+		},
 	},
 	plugins: [daisyui],
 	daisyui: {
 		themes: [
 			{
 				sunflower: {
-					primary: "#FFDA03", // Bright Sunflower Yellow
-					secondary: "#FFF5B7", // Soft Pale Yellow
-					accent: "#3A7D44", // Leafy Green (for accents)
-					neutral: "#4B3F30", // Dark Brown (for text, similar to sunflower seeds)
-					"base-100": "#FDF6E3", // Light Cream (background, like sunflower petals)
-					info: "#000000", // Golden Yellow (for informational elements)
-					success: "#85BB65", // Green (representing growth and success)
-					warning: "#F0C808", // Bright Golden Yellow (for warnings)
-					error: "#E25822", // Burnt Orange (for errors)
+					primary: "hsl(45, 100%, 50%)", // Bright yellow accent
+					secondary: "hsl(220, 15%, 15%)", // Dark secondary (for darker backgrounds)
+					accent: "hsl(45, 100%, 50%)", // Bright yellow for accents
+					neutral: "hsl(220, 20%, 8%)", // Dark neutral (card elements)
+					"base-100": "hsl(220, 20%, 5%)", // Very dark background
+					info: "hsl(220, 10%, 20%)", // Info color - dark grey
+					success: "#85BB65", // Success green remains the same
+					warning: "#F0C808", // Bright golden yellow for warnings
+					error: "#E25822", // Burnt orange for errors
+					"primary-foreground": "hsl(220, 10%, 20%)", // Dark foreground
+					"secondary-foreground": "hsl(0, 0%, 95%)", // Light foreground for text
 				},
 			},
 		],
