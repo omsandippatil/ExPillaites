@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon backend/server.js",
     "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "prebuild": "if [ ! -f frontend/package.json ]; then echo 'Error: ENOENT: frontend/package.json not found' && exit 1; fi"
   },
   "keywords": [],
   "author": "",
